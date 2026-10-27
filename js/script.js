@@ -1,3 +1,15 @@
+// 화면 크기에 맞게 포스터 크기 조정
+function fitPoster() {
+  let s = Math.min(window.innerWidth / 1745, window.innerHeight / 828);
+  $(".poster").css({
+    transform: "scale(" + s + ")",
+    left: (window.innerWidth - 1745 * s) / 2 + "px",
+    top: (window.innerHeight - 828 * s) / 2 + "px"
+  });
+}
+fitPoster();
+$(window).on("resize", fitPoster);
+
 $(document).ready(function () {
 
   // 0: 시작 숲
