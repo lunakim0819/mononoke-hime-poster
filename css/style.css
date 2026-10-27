@@ -434,11 +434,3 @@ body {
   left: -70px;
   top: 20px;
 }
-/* 화면 크기에 맞게 포스터 비율 유지 */
-body {
-  overflow: hidden;
-}
-
-.poster {
-  transform-origin: 0 0;
-}
